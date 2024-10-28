@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podium des Meilleurs Entités</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .podium {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .podium-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .podium-item img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .podium-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gold {
+            background-color: #ffd700;
+        }
+
+        .silver {
+            background-color: #c0c0c0;
+        }
+
+        .bronze {
+            background-color: #cd7f32;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0 0 10px;
+        }
+
+        .link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .podium {
+                flex-direction: column;
+            }
+
+            .podium-item {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Podium des Meilleurs Entités</h1>
+    <div class="podium">
+        <div class="podium-item gold">
+            <h2>1ère Place : Token A</h2>
+            <img src="token1.png" alt="Token A">
+            <p>Le Token A est reconnu pour sa solidité et sa croissance rapide. Utilisé dans plusieurs applications blockchain, il a démontré une excellente performance sur le marché.</p>
+            <a href="https://example.com/token-a" class="link">En savoir plus</a>
+        </div>
+        <div class="podium-item silver">
+            <h2>2ème Place : Token B</h2>
+            <img src="token2.png" alt="Token B">
+            <p>Le Token B offre des fonctionnalités innovantes qui attirent les développeurs. Avec une communauté active, il a su se positionner comme un acteur clé dans son secteur.</p>
+            <a href="https://example.com/token-b" class="link">En savoir plus</a>
+        </div>
+        <div class="podium-item bronze">
+            <h2>3ème Place : Token C</h2>
+            <img src="token3.png" alt="Token C">
+            <p>Le Token C est un projet qui allie technologie et durabilité. Son objectif est de rendre le monde numérique plus accessible et éthique.</p>
+            <a href="https://example.com/token-c" class="link">En savoir plus</a>
+        </div>
+    </div>
+</body>
+</html>
